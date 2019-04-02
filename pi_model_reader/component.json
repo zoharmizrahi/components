@@ -1,0 +1,34 @@
+{
+    "engineType": "PySpark",
+    "language": "Python",
+    "userStandalone": false,
+    "name": "pi_model_reader",
+    "label": "PI Model Reader",
+    "version": "1.0.0",
+    "group": "Connectors",
+    "program": "pi_model_reader.py",
+    "componentClass": "PiModelReader",
+    "modelBehavior": "ModelConsumer",
+    "useMLOps": true,
+    "inputInfo": [
+    ],
+    "outputInfo": [
+        {
+            "description": "A Pi double number",
+            "label": "Pi Number",
+            "defaultComponent": "",
+            "type": "double",
+            "group": "data"
+        }
+    ],
+    "arguments": [
+        {
+            "key": "input-pi-model",
+            "label": "Model input file",
+            "type": "str",
+            "description": "File to use for reading the pi model",
+            "optional": true,
+            "tag": "input_model_path"
+        }
+    ]
+}

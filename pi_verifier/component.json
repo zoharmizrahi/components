@@ -1,0 +1,41 @@
+{
+    "engineType": "PySpark",
+    "language": "Python",
+    "userStandalone": false,
+    "name": "pi_verifier",
+    "label": "PI Verifier",
+    "version": "1.0.0",
+    "group": "General",
+    "program": "pi_verifier.py",
+    "componentClass": "PiVerifier",
+    "modelBehavior": "ModelConsumer",
+    "useMLOps": true,
+    "inputInfo": [
+        {
+            "description": "A Pi double number",
+            "label": "Pi Number",
+            "defaultComponent": "",
+            "type": "double",
+            "group": "data"
+        }
+    ],
+    "outputInfo": [
+    ],
+    "arguments": [
+        {
+            "key": "precision",
+            "label": "Precision",
+            "type": "float",
+            "description": "The tolerance at which to validate Pi value",
+            "optional": true
+        },
+        {
+            "key": "input-pi-model",
+            "label": "Model input file",
+            "type": "str",
+            "description": "File to use for reading the pi model",
+            "optional": true,
+            "tag": "input_model_path"
+        }
+     ]
+}

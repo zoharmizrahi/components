@@ -1,0 +1,34 @@
+{
+    "engineType": "PySpark",
+    "language": "Python",
+    "userStandalone": false,
+    "name": "num_gen_df",
+    "label": "Number generator (DataFrame)",
+    "version": "1.0.0",
+    "group": "Connectors",
+    "program": "num_gen.py",
+    "componentClass": "NumGen",
+    "useMLOps": true,
+    "includeGlobPatterns": "num_gen* | __init__.py",
+    "inputInfo": [
+
+    ],
+    "outputInfo": [
+        {
+            "description": "DataFrame['x', 'y']",
+            "label": "[int, int]",
+            "defaultComponent": "",
+            "type": "DataFrame[Row(int, int)]",
+            "group": "data"
+        }
+    ],
+    "arguments": [
+        {
+            "key": "num_samples",
+            "type": "int",
+            "label": "Num samples",
+            "description": "Num samples",
+            "optional": true
+        }
+     ]
+}

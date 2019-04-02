@@ -1,0 +1,41 @@
+{
+    "engineType": "PySpark",
+    "language": "Python",
+    "userStandalone": false,
+    "name": "pi_calc_df",
+    "label": "PI calculation (DataFrame)",
+    "version": "1.0.0",
+    "group": "Algorithms",
+    "program": "pi_calc.py",
+    "componentClass": "PiCalc",
+    "modelBehavior": "ModelProducer",
+    "useMLOps": true,
+    "excludeGlobPatterns": "num_gen*",
+    "inputInfo": [
+        {
+            "description": "DataFrame['x', 'y']",
+            "label": "[int, int]",
+            "defaultComponent": "",
+            "type": "DataFrame[Row(int, int)]",
+            "group": "data"
+        },
+        {
+            "description": "DataFrame['x', 'y']",
+            "label": "[int, int]",
+            "defaultComponent": "",
+            "type": "DataFrame[Row(int, int)]",
+            "group": "data"
+        }
+    ],
+    "outputInfo": [
+    ],
+    "arguments": [
+       { "key": "output-model",
+          "label": "Model output file",
+          "type": "str",
+          "description": "File to use for saving the trained model",
+          "optional": true,
+          "tag": "model_dir"
+        }
+     ]
+}
